@@ -1,0 +1,52 @@
+@import "./vars";
+
+.note-group {
+  display: flex;
+  flex-flow: column;
+  &__title {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    background-color: #101010;
+    padding: 0 14px;
+    gap: 10px;
+    border-bottom: 1px solid $border-color;
+    user-select: none;
+    &-icon,
+    &-expand {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-expand {
+      margin-left: auto;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+  }
+  .note-link {
+    padding: 8px 14px 8px 24px;
+    &:last-child {
+      border-bottom: 4px solid $border-color;
+    }
+  }
+  &.collapsed {
+    .note-link {
+      height: 0;
+      padding: 0;
+      border-bottom: 0;
+      &__head {
+        height: 0;
+      }
+      &__title,
+      &__description,
+      &__date {
+        display: none;
+      }
+    }
+    .note-group__title-expand {
+      transform: rotate(180deg);
+    }
+  }
+}

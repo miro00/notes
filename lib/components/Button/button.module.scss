@@ -1,0 +1,36 @@
+.btn {
+  padding: 4px 6px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+  border: 0;
+  outline: none;
+  transition: background-color .1s;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: rgb(224, 224, 224);
+  }
+
+  &:active {
+    background-color: rgb(196, 196, 196);
+  }
+
+  &.primary {
+    background-color: var(--primary-color);
+    color: #fff;
+
+    &:hover {
+      background-color: rgb(100, 172, 255);
+    }
+
+    &:active {
+      background-color: rgb(56, 116, 185);
+    }
+  }
+
+  &:disabled {
+    opacity: .8;
+  }
+}
