@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { VscChevronDown } from "react-icons/vsc";
-
+import { VscChevronDown, VscPackage } from "react-icons/vsc";
 export default function NoteGroup(props) {
   const { children, title, icon } = props;
   const [collapsed, setCollapsed] = useState(false)
@@ -8,7 +7,7 @@ export default function NoteGroup(props) {
   return (
     <div className={`note-group${collapsed ? " collapsed" : ""}`}>
       <div className="note-group__title">
-        {icon && <div className="note-group__title-icon">{icon}</div>}
+        <div className="note-group__title-icon">{icon}</div>
         {title}
         <div className="note-group__title-expand" onClick={() => setCollapsed(!collapsed)}>
           <VscChevronDown/>
@@ -21,4 +20,5 @@ export default function NoteGroup(props) {
 
 NoteGroup.defaultProps = {
   title: "Группа заметок",
+  icon: <VscPackage/>
 };

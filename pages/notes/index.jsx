@@ -7,6 +7,7 @@ import {
   VscTrash,
   VscDiffAdded,
   VscPinned,
+  VscPackage
 } from "react-icons/vsc";
 
 export default function NotesPage() {
@@ -31,48 +32,51 @@ export default function NotesPage() {
           <div className="notes-list">
             <NoteGroup icon={<VscPinned />} title="Закрепленные">
               <NoteLink
-                title="Заметочка"
+                title="Заметка"
                 date="14.11.2021"
                 desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia..Lorem ipsum dolor sit amet"
               />
               <NoteLink
-                title="Заметочка"
+                title="Заметка"
                 date="14.11.2021"
                 desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia..Lorem ipsum dolor sit amet"
               />
             </NoteGroup>
-            <NoteGroup title="Рецепты">
+            <NoteGroup title="Новая группа">
               <NoteLink
-                title="Заметочка"
+                title="Заметка"
                 date="14.11.2021"
                 desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia..Lorem ipsum dolor sit amet"
               />
               <NoteLink
-                title="Заметочка"
+                title="Заметка"
                 date="14.11.2021"
                 desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia..Lorem ipsum dolor sit amet"
               />
               <NoteLink
-                title="Заметочка"
+                title="Заметка"
                 date="14.11.2021"
                 desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia..Lorem ipsum dolor sit amet"
               />
               <NoteLink
-                title="Заметочка"
+                title="Заметка"
                 date="14.11.2021"
                 desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia..Lorem ipsum dolor sit amet"
               />
               <NoteLink
-                title="Заметочка"
+                title="Заметка"
                 date="14.11.2021"
                 desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia..Lorem ipsum dolor sit amet"
               />
             </NoteGroup>
             <NoteLink
-                title="Заметочка"
+                title="Заметка"
                 date="14.11.2021"
                 desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia..Lorem ipsum dolor sit amet"
               />
+              <NoteGroup>
+                <NoteLink title="Заметка" date="15.11.2021" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia..Lorem ipsum dolor sit amet" />
+              </NoteGroup>
           </div>
         </div>
       </aside>
